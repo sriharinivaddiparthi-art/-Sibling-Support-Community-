@@ -1,17 +1,17 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f7f7f7; /* page background */
+    background-color: #f4f7fb;
     padding: 20px;
     max-width: 900px;
     margin: auto;
 }
 
 h1 {
-    color: #f7f7f7; /* heading color changed to your light blue */
+    color: #2c3e50;
 }
 
 section {
-    background: #f6f5fc;
+    background: white;
     padding: 25px;
     margin-top: 20px;
     border-radius: 12px;
@@ -32,5 +32,5 @@ section {
 }
 
 .nav a:hover {
-    color: #fcecc5;
+    color: #2980b9;
 }
