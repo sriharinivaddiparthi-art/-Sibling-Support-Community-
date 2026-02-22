@@ -1,23 +1,26 @@
+/* -------------------- Page Background -------------------- */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f7fb;
+    background-color: #f4f7fb; /* page background */
     padding: 20px;
     max-width: 900px;
     margin: auto;
 }
 
+/* -------------------- Headings -------------------- */
 h1 {
-    color: #2c3e50;
+    color: #0c0d0d; /* main heading color (inside sections) */
 }
 
 section {
-    background: white;
+    background: #f6f5fc;  /* cards / content sections */
     padding: 25px;
     margin-top: 20px;
     border-radius: 12px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
 }
 
+/* -------------------- Navigation -------------------- */
 .nav {
     text-align: center;
     margin: 25px 0;
@@ -26,11 +29,11 @@ section {
 .nav a {
     margin: 0 15px;
     text-decoration: none;
-    color: #2c3e50;
+    color: #2c3e50; /* nav link color */
     font-weight: 500;
     transition: 0.3s;
 }
 
 .nav a:hover {
-    color: #2980b9;
+    color: #fcecc5; /* hover color */
 }
