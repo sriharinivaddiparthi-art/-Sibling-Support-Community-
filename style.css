@@ -1,13 +1,13 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #dfeef5;
+    background-color: #dfeef5; /* page background */
     padding: 20px;
     max-width: 900px;
     margin: auto;
 }
 
 h1 {
-    color: #0c0d0d;
+    color: #dfeef5; /* heading color changed to your light blue */
 }
 
 section {
