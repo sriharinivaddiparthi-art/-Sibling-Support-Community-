@@ -23,12 +23,41 @@
         <p>A safe space for siblings of neurodivergent individuals</p>
     </header>
 
-    <!-- Daily Quote Section -->
-    <section id="daily-quote" style="font-style:italic; color:#2c3e50; margin-top:20px; text-align:center; font-size:18px;">
+    <!-- Random Daily Quote -->
+    <section id="daily-quote" style="font-style:italic; color:#2c3e50; margin-top:20px; text-align:center; font-size:18px; padding:15px; border-radius:10px; background:#ffffff; box-shadow:0px 4px 10px rgba(0,0,0,0.05);">
         <!-- Quote will appear here -->
     </section>
 
-    <!-- Main Welcome Section -->
+    <!-- Coping Tips Card -->
+    <section id="coping-tips" style="margin-top:20px; padding:20px; background:#ffffff; border-radius:12px; box-shadow:0px 4px 10px rgba(0,0,0,0.05);">
+        <h2>Coping Tips</h2>
+        <p id="tip-text" style="font-style:italic;"></p>
+    </section>
+
+    <!-- Mini Challenge -->
+    <section id="mini-challenge" style="margin-top:20px; padding:20px; background:#ffffff; border-radius:12px; box-shadow:0px 4px 10px rgba(0,0,0,0.05);">
+        <h2>Mini Challenge</h2>
+        <p id="challenge-text" style="font-style:italic;"></p>
+    </section>
+
+    <!-- You Are Not Alone Wall -->
+    <section id="wall" style="margin-top:20px; padding:20px; background:#ffffff; border-radius:12px; box-shadow:0px 4px 10px rgba(0,0,0,0.05);">
+        <h2>You Are Not Alone</h2>
+        <ul id="wall-messages">
+            <li>“I’ve been there too — keep going!” ⭐</li>
+            <li>“Your efforts matter every day.”</li>
+            <li>“Don’t forget to take a break for yourself.”</li>
+        </ul>
+    </section>
+
+    <!-- Example Gamification -->
+    <section id="badges" style="margin-top:20px; padding:20px; background:#ffffff; border-radius:12px; box-shadow:0px 4px 10px rgba(0,0,0,0.05);">
+        <h2>Your Badges</h2>
+        <p>⭐ First Story Shared</p>
+        <p>📖 5 Stories Read</p>
+    </section>
+
+    <!-- Welcome Section -->
     <section>
         <h2>Welcome</h2>
         <p>
@@ -47,8 +76,9 @@
         </p>
     </section>
 
-    <!-- JavaScript for Random Quote -->
+    <!-- JavaScript -->
     <script>
+        // --- Random Daily Quote ---
         const quotes = [
             "You are stronger than you think.",
             "Every small step counts.",
@@ -58,13 +88,32 @@
             "One day at a time.",
             "Your efforts matter."
         ];
-
-        // Pick a random quote each time the page loads
-        const randomIndex = Math.floor(Math.random() * quotes.length);
-        const randomQuote = quotes[randomIndex];
-
-        // Display the quote
+        const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
         document.getElementById("daily-quote").innerText = randomQuote;
+
+        // --- Coping Tips ---
+        const tips = [
+            "Take 10 minutes to breathe when overwhelmed.",
+            "Write down one positive thing about today.",
+            "Go for a short walk to clear your mind.",
+            "Talk to someone you trust.",
+            "Listen to calming music or meditate."
+        ];
+        const randomTip = tips[Math.floor(Math.random() * tips.length)];
+        document.getElementById("tip-text").innerText = randomTip;
+
+        // --- Mini Challenge ---
+        const challenges = [
+            "Write one thing you’re proud of about your sibling today.",
+            "Share a small act of kindness with your sibling.",
+            "Reflect on a positive memory together.",
+            "List 3 things you did well today."
+        ];
+        const randomChallenge = challenges[Math.floor(Math.random() * challenges.length)];
+        document.getElementById("challenge-text").innerText = randomChallenge;
+
+        // --- You Are Not Alone Wall (static for now, can expand later) ---
+        // Already filled in HTML
     </script>
 
 </body>
