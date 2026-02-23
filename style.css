@@ -1,26 +1,22 @@
-/* -------------------- Page Background -------------------- */
+/* Body & font */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f7fb; /* page background */
+    background-color: #f4f7fb;
     padding: 20px;
     max-width: 900px;
     margin: auto;
 }
 
-/* -------------------- Headings -------------------- */
-h1 {
-    color: #0c0d0d; /* main heading color (inside sections) */
+/* Header */
+.header {
+    background-color: #dfeef5;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
 }
 
-section {
-    background: #fcf5de;  /* cards / content sections */
-    padding: 25px;
-    margin-top: 20px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
-}
-
-/* -------------------- Navigation -------------------- */
+/* Navigation */
 .nav {
     text-align: center;
     margin: 25px 0;
@@ -29,11 +25,45 @@ section {
 .nav a {
     margin: 0 15px;
     text-decoration: none;
-    color: #2c3e50; /* nav link color */
+    color: #2c3e50;
     font-weight: 500;
     transition: 0.3s;
 }
 
 .nav a:hover {
-    color: #fcecc5; /* hover color */
+    color: #2980b9;
+}
+
+/* Sections */
+section {
+    margin-top: 20px;
+}
+
+/* Welcome section */
+.welcome h2 {
+    text-align: center;
+}
+
+/* Cards (quote, tips, challenge, wall, badges) */
+.card {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Card headings */
+.card h3 {
+    margin-top: 0;
+}
+
+/* Wall list */
+#wall ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#wall li {
+    margin-bottom: 8px;
 }
