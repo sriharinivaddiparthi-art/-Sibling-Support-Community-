@@ -8,27 +8,27 @@
 </head>
 
 <body> 
+    <!-- Navigation -->
     <nav class="nav">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="share.html">Share</a>
-    <a href="read.html">Stories</a>
-    <a href="resources.html">Resources</a>
-</nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="share.html">Share</a>
+        <a href="read.html">Stories</a>
+        <a href="resources.html">Resources</a>
+    </nav>
 
+    <!-- Header -->
     <header style="background-color:#dfeef5;color:black;padding:20px;text-align:center;border-radius:10px;">
         <h1>Sibling Support</h1>
         <p>A safe space for siblings of neurodivergent individuals</p>
     </header>
 
-    <nav style="margin:20px 0;text-align:center;font-weight:bold;">
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="share.html">Share Your Story</a> |
-        <a href="read.html">Read Stories</a> |
-        <a href="resources.html">Resources</a>
-    </nav>
+    <!-- Daily Quote Section -->
+    <section id="daily-quote" style="font-style:italic; color:#2c3e50; margin-top:20px; text-align:center; font-size:18px;">
+        <!-- Quote will appear here -->
+    </section>
 
+    <!-- Main Welcome Section -->
     <section>
         <h2>Welcome</h2>
         <p>
@@ -46,6 +46,27 @@
             <strong><a href="share.html">Click here to share your story anonymously.</a></strong>
         </p>
     </section>
+
+    <!-- JavaScript for Daily Quote -->
+    <script>
+        const quotes = [
+            "You are stronger than you think.",
+            "Every small step counts.",
+            "Courage is not the absence of fear, but taking action despite it.",
+            "You are not alone.",
+            "Progress, not perfection.",
+            "One day at a time.",
+            "Your efforts matter."
+        ];
+
+        // Pick a quote based on the day of the month
+        const date = new Date();
+        const quoteIndex = date.getDate() % quotes.length;
+        const quote = quotes[quoteIndex];
+
+        // Display the quote
+        document.getElementById("daily-quote").innerText = quote;
+    </script>
 
 </body>
 </html>
