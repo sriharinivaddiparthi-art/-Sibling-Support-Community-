@@ -44,14 +44,21 @@ section {
     text-align: center;
 }
 
-/* Cards (quote, tips, challenge, wall, badges) */
+/* Cards base style */
 .card {
-    background: white;
     padding: 20px;
     margin-top: 20px;
     border-radius: 12px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
+    color: #2c3e50;
 }
+
+/* Color-coded cards */
+.card.quote { background-color: #d0e7f9; }        /* soft blue */
+.card.tips { background-color: #fff7d0; }         /* soft yellow */
+.card.challenge { background-color: #d0f9e0; }    /* soft green */
+.card.wall { background-color: #f9d0f2; }         /* soft pink/purple */
+.card.badges { background-color: #f0f0f0; }       /* light gray for badges */
 
 /* Card headings */
 .card h3 {
