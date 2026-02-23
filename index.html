@@ -47,7 +47,7 @@
         </p>
     </section>
 
-    <!-- JavaScript for Daily Quote -->
+    <!-- JavaScript for Random Quote -->
     <script>
         const quotes = [
             "You are stronger than you think.",
@@ -59,13 +59,12 @@
             "Your efforts matter."
         ];
 
-        // Pick a quote based on the day of the month
-        const date = new Date();
-        const quoteIndex = date.getDate() % quotes.length;
-        const quote = quotes[quoteIndex];
+        // Pick a random quote each time the page loads
+        const randomIndex = Math.floor(Math.random() * quotes.length);
+        const randomQuote = quotes[randomIndex];
 
         // Display the quote
-        document.getElementById("daily-quote").innerText = quote;
+        document.getElementById("daily-quote").innerText = randomQuote;
     </script>
 
 </body>
