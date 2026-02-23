@@ -44,7 +44,7 @@ section {
     text-align: center;
 }
 
-/* Cards base style */
+/* Card base style */
 .card {
     padding: 20px;
     border-radius: 12px;
@@ -52,7 +52,7 @@ section {
     color: #2c3e50;
 }
 
-/* Color-coded cards */
+/* Card colors */
 .card.quote { background-color: #d0e7f9; }        /* soft blue */
 .card.tips { background-color: #fff7d0; }         /* soft yellow */
 .card.challenge { background-color: #d0f9e0; }    /* soft green */
@@ -74,10 +74,17 @@ section {
     margin-bottom: 8px;
 }
 
-/* Grid for 2x2 cards */
+/* 2x2 Grid for cards */
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     margin-top: 20px;
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
 }
